@@ -1,0 +1,94 @@
+/* Developed by Raja Krishna */
+
+body{
+    font-size: 14px;
+    /* font-family: 'KoHo', sans-serif; */
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: #181818;
+    background-color: #eeeeee;
+    text-shadow: 0px 0px 0px;
+}
+h1,h2,h3,h4{
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+
+/* navbar styles */
+.mah-navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    border: none;
+    background-color:#F5F5F5;
+    min-height: 75px;
+    position: relative;
+    z-index: 111;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.16), 0px 2px 10px rgba(0,0,0,0.12);
+   
+  }
+  .navbar-nav>li>a{
+      color:#181818;
+  }
+  .navbar-nav > li.active > a, .navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
+    color:#FF4500; 
+    border: none;
+    background: transparent;
+}
+
+.navbar-nav > li > a::after {
+    content: "";
+    height: 2px;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+    transition: all 250ms ease 0s;
+    transform: scale(0);
+}
+
+.navbar-nav > li.active > a::after, .navbar-nav > li:hover > a::after {
+    transform: scale(1);
+}
+    .navbar-nav > li.active > a:after,
+    .navbar-nav > li:hover > a:after {
+        transform: scale(1);
+    }
+   
+.navbar-nav > li.active > a:after,
+.navbar-nav > li > a:after {
+    background: #FF4500 none repeat scroll 0% 0%;
+}
+.nav-side-icon i{
+    font-size: 14px;
+    text-align: right;
+    margin-left: 5px;
+    font-weight: bold;
+    transition: all .25s ease-in-out;
+}
+a>.nav-side-icon>i{
+    font-weight: bold;
+}
+.navbar-nav>li:hover a>.nav-side-icon>i
+{
+transform: rotate(180deg);
+}
+
+  .mah-navbrand{
+    height: 75px;
+    font-size: 22px;
+    line-height: 45px;
+    color: #ff4500;
+  }
+
+
+/* navbar styles End */
+
+
+
+@media (min-width: 768px){
+.navbar-nav>li>a {
+    padding-top: 27.5px;
+    padding-bottom: 27.5px;
+    min-width: 80px;
+    text-align: center;
+}
+}
